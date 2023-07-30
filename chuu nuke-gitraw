@@ -1,0 +1,27 @@
+import base64, os
+
+chuumeme64=
+path= os.path.expanduser('~')
+
+path = path+"\\Desktop\\chuuNuke\\ "
+
+try:
+    os.mkdir(path[:-1])
+    os.mkdir(path)
+except:
+    pass
+
+try:
+    os.system("attrib +h "+path)
+except:
+    pass
+
+chuumeme = base64.b64decode((chuumeme64))
+
+loop=2
+
+for i in range(loop):
+    with open(path+f"\chuu_{i}.jpg", "wb") as chuu:
+        chuu.write(chuumeme)
+        print(f"chuu_meme_{i} created")
+print(f"{loop} of chuu meme photos created")
