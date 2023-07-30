@@ -1,7 +1,7 @@
 import base64, os, sys
 import urllib.request as ur
 
-f = ur.urlopen("https://raw.githubusercontent.com/EmanuelLopesS2/chuu-meme-nuke/main/chuu_image_b64")
+f = ur.urlopen("https://raw.githubusercontent.com/EmanuelLopesS2/chuu-meme-nuke/main/chuu_base64.b64")
 chuu64 = f.read()
 
 path= os.path.expanduser('~')
