@@ -4,7 +4,7 @@ import urllib.request as ur
 f = ur.urlopen("https://raw.githubusercontent.com/EmanuelLopesS2/chuu-meme-nuke/main/chuu_base64.b64")
 chuu64 = f.read()
 
-path= os.path.expanduser('~')
+path = os.path.expanduser('~')
 
 path = path+"\\Desktop\\chuuNuke\\ "
 
@@ -27,11 +27,11 @@ except:
 
 chuunuke = base64.b64decode((chuu64))
 
-loop=int(sys.argv[1])
+loop = int(sys.argv[1])
 print(loop)
 
 for i in range(loop):
     with open(path+f"\chuu_{i}.jpg", "wb") as chuu:
         chuu.write(chuunuke)
-        print(f"chuu_meme_{i} created")
-print(f"{loop} of chuu meme photos created")
+        #print everything if you want 》print(f"chuu_meme_{i} created")
+print(f"{loop} photos of chuu created")
